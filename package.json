@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CarloAdornetto/iotagent-node-lib.git"
+    "url": "https://github.com/CarloAdornetto/iotagent-json.git"
   },
   "bugs": {
     "url": "https://github.com/telefonicaid/iotagent-json/issues"

@@ -19,15 +19,15 @@
  *
  * For those usages not covered by the GNU Affero General Public License
  * please contact with::[contacto@tid.es]
- *
- * Modified by: Daniel Calvo - ATOS Research & Innovation
  */
 var config = {};
 
 config.mqtt = {
-    host: 'localhost',
+    host: '192.168.20.252',
     port: 1883,
-    thinkingThingsPlugin: true
+    thinkingThingsPlugin: true,
+    username: 'guest',
+    password: 'guest'
 };
 
 config.http = {
@@ -35,6 +35,7 @@ config.http = {
 };
 
 config.amqp = {
+    host: '192.168.20.252',
     port: 5672,
     exchange: 'amq.topic',
     queue: 'iota_queue',
@@ -45,14 +46,18 @@ config.iota = {
     logLevel: 'FATAL',
     contextBroker: {
         host: '192.168.1.1',
-        port: '1026',
-        ngsiVersion: 'v2'
+        port: '1026'
     },
     server: {
         port: 4041
     },
     deviceRegistry: {
-        type: 'memory'
+        type: 'mongodb'
+    },
+    mongodb: {
+        host: '192.168.20.252',
+        port: '27017',
+        db: 'iotagentjson'
     },
     types: {},
     service: 'howtoService',
@@ -60,8 +65,7 @@ config.iota = {
     providerUrl: 'http://localhost:4041',
     deviceRegistrationDuration: 'P1M',
     defaultType: 'Thing',
-    defaultResource: '/iot/json',
-    compressTimestamp: true
+    defaultResource: '/iot/json'
 };
 
 config.defaultKey = '1234';

@@ -23,7 +23,7 @@
 var config = {};
 
 config.mqtt = {
-    host: 'localhost',
+    host: '192.168.20.252',
     port: 1883,
     thinkingThingsPlugin: true,
     username: 'guest',
@@ -35,7 +35,7 @@ config.http = {
 };
 
 config.amqp = {
-    host: 'localhost',
+    host: '192.168.20.252',
     port: 5672,
     exchange: 'amq.topic',
     queue: 'iota_queue',
@@ -52,7 +52,12 @@ config.iota = {
         port: 4041
     },
     deviceRegistry: {
-        type: 'memory'
+        type: 'mongodb'
+    },
+    mongodb: {
+        host: '192.168.20.252',
+        port: '27017',
+        db: 'iotagentjson'
     },
     types: {},
     service: 'howtoService',
@@ -60,8 +65,7 @@ config.iota = {
     providerUrl: 'http://localhost:4041',
     deviceRegistrationDuration: 'P1M',
     defaultType: 'Thing',
-    defaultResource: '/iot/json',
-    compressTimestamp: true
+    defaultResource: '/iot/json'
 };
 
 config.defaultKey = '1234';

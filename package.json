@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/telefonicaid/iotagent-json.git"
+    "url": "https://github.com/CarloAdornetto/iotagent-node-lib.git"
   },
   "bugs": {
     "url": "https://github.com/telefonicaid/iotagent-json/issues"
@@ -61,7 +61,7 @@
     "body-parser": "1.18.3",
     "dateformat": "3.0.3",
     "express": "~4.16.4",
-    "iotagent-node-lib": "git://github.com/CarloAdornetto/iotagent-node-lib/tree/master",
+    "iotagent-node-lib": "git://github.com/CarloAdornetto/iotagent-node-lib.git",
     "logops": "2.1.0",
     "mqtt": "2.18.8",
     "request": "2.88.0",

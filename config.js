@@ -29,7 +29,7 @@ config.mqtt = {
     /**
      * Host where the MQTT Broker is located.
      */
-    host: 'localhost',
+    host: '192.168.20.252',
     /**
      * Port where the MQTT Broker is listening.
      */
@@ -60,7 +60,7 @@ config.amqp = {
     /**
      * Host where the AMQP broker is located.
      */
-    host: 'localhost',
+    host: '192.168.20.252',
     /**
      * Port where the AMQP broker is listening.
      */
@@ -119,7 +119,7 @@ config.iota = {
         /**
          * Host where the Context Broker is located.
          */
-        host: 'localhost',
+        host: '192.168.20.252',
         /**
          * Port where the Context Broker is listening.
          */
@@ -134,52 +134,52 @@ config.iota = {
          */
         port: 4041
     },
-   
+
     /**
      * Configuration for secured access to instances of the Context Broker secured with a PEP Proxy.
      * For the authentication mechanism to work, the authentication attribute in the configuration has to be fully
      * configured, and the authentication.enabled subattribute should have the value `true`.
      *
-     * The Username and password should be considered as sensitive data and should not be stored in plaintext. 
+     * The Username and password should be considered as sensitive data and should not be stored in plaintext.
      * Either encrypt the config and decrypt when initializing the instance or use environment variables secured by
      * docker secrets.
      */
     //authentication: {
-        //enabled: false,
-        /**
-        * Type of the Identity Manager which is used when authenticating the IoT Agent.
-        */
-        //type: 'keystone',
-        /**
-        * Name of the additional header passed to hold the identity of the IoT Agent
-        */
-        //header: 'X-Auth-Token',
-        /**
-        * Hostname of the Identity Manager.
-        */
-        //host: 'localhost',
-        /**
-        * Port of the Identity Manager.
-        */
-        //port: '5000',
-        /**
-        * Username for the IoT Agent - Note this should not be stored in plaintext.
-        */
-        //user: 'IOTA_AUTH_USER',
-        /**
-        * Password for the IoT Agent - Note this should not be stored in plaintext.
-        */
-        //password: 'IOTA_AUTH_PASSWORD',
-        /**
-        * OAuth2 client ID - Note this should not be stored in plaintext.
-        */
-        //clientId: 'IOTA_AUTH_CLIENT_ID',
-        /**
-        * OAuth2 client secret - Note this should not be stored in plaintext.
-        */
-        //clientSecret: 'IOTA_AUTH_CLIENT_SECRET'    
+    //enabled: false,
+    /**
+     * Type of the Identity Manager which is used when authenticating the IoT Agent.
+     */
+    //type: 'keystone',
+    /**
+     * Name of the additional header passed to hold the identity of the IoT Agent
+     */
+    //header: 'X-Auth-Token',
+    /**
+     * Hostname of the Identity Manager.
+     */
+    //host: 'localhost',
+    /**
+     * Port of the Identity Manager.
+     */
+    //port: '5000',
+    /**
+     * Username for the IoT Agent - Note this should not be stored in plaintext.
+     */
+    //user: 'IOTA_AUTH_USER',
+    /**
+     * Password for the IoT Agent - Note this should not be stored in plaintext.
+     */
+    //password: 'IOTA_AUTH_PASSWORD',
+    /**
+     * OAuth2 client ID - Note this should not be stored in plaintext.
+     */
+    //clientId: 'IOTA_AUTH_CLIENT_ID',
+    /**
+     * OAuth2 client secret - Note this should not be stored in plaintext.
+     */
+    //clientSecret: 'IOTA_AUTH_CLIENT_SECRET'
     //},
-   
+
     /**
      * Defines the configuration for the Device Registry, where all the information about devices and configuration
      * groups will be stored. There are currently just two types of registries allowed:
@@ -202,7 +202,7 @@ config.iota = {
          * Host where MongoDB is located. If the MongoDB used is a replicaSet, this property will contain a
          * comma-separated list of the instance names or IPs.
          */
-        host: 'localhost',
+        host: '192.168.20.252',
         /**
          * Port where MongoDB is listening. In the case of a replicaSet, all the instances are supposed to be listening
          * in the same port.

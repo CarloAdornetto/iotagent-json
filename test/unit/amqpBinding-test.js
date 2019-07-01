@@ -40,7 +40,7 @@ var iotagentMqtt = require('../../'),
 
 function startConnection(exchange, callback) {
     amqp.connect(
-        'amqp://localhost',
+        'amqp://' + config.amqp.host,
         function(err, conn) {
             amqpConn = conn;
 

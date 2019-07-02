@@ -5,15 +5,15 @@
   "version": "1.10.0-next",
   "homepage": "https://github.com/CarloAdornetto/iotagent-json",
   "author": {
-    "name": "Daniel Moran",
-    "email": "dmj@tid.es"
+    "name": "Carlo Adornetto",
+    "email": "carlo.adornetto@gmail.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/CarloAdornetto/iotagent-json.git"
   },
   "bugs": {
-    "url": "https://github.com/telefonicaid/iotagent-json/issues"
+    "url": "https://github.com/CarloAdornetto/iotagent-json/issues"
   },
   "main": "lib/iotagent-json",
   "engines": {

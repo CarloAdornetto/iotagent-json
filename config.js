@@ -29,7 +29,7 @@ config.mqtt = {
     /**
      * Host where the MQTT Broker is located.
      */
-    host: '192.168.20.252',
+    host: '192.168.99.101',
     /**
      * Port where the MQTT Broker is listening.
      */
@@ -60,7 +60,7 @@ config.amqp = {
     /**
      * Host where the AMQP broker is located.
      */
-    host: '192.168.20.252',
+    host: '192.168.99.101',
     /**
      * Port where the AMQP broker is listening.
      */
@@ -119,7 +119,7 @@ config.iota = {
         /**
          * Host where the Context Broker is located.
          */
-        host: '192.168.20.252',
+        host: '192.168.99.101',
         /**
          * Port where the Context Broker is listening.
          */
@@ -202,7 +202,7 @@ config.iota = {
          * Host where MongoDB is located. If the MongoDB used is a replicaSet, this property will contain a
          * comma-separated list of the instance names or IPs.
          */
-        host: '192.168.20.252',
+        host: '192.168.99.101',
         /**
          * Port where MongoDB is listening. In the case of a replicaSet, all the instances are supposed to be listening
          * in the same port.

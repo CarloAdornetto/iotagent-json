@@ -60,10 +60,20 @@ if (cluster.isMaster) {
     var cpuCount = require('os').cpus().length;
     console.log('#cpu ' + cpuCount);
 
+    if('v0.11.13'.localeCompare(process.version)>=0){
+        cluster.schedulingPolicy = cluster.SCHED_RR;
+    }
+
     // Create a worker for each CPU
     for (var i = 0; i < cpuCount; i += 1) {
         cluster.fork();
     }
+
+    cluster.on('exit', (worker, code, signal) => {
+        console.log(`worker ${worker.process.pid} died`);
+        cluster.fork(); // Create a New Worker, If Worker is Dead
+      });
+
 } else {
 
     start();
